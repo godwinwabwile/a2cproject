@@ -251,6 +251,37 @@ class SortedTable:
 
 ``` 
 
+
+## Class Method Analysis
+```
+# insert(self, key, value):
+
+Time Complexity: O(n), where n is the number of Records in the SortedTable.
+
+This function inserts a new Record into the SortedTable. If the table is full, it doubles the capacity by creating a new table and copying the existing elements. Then, it performs a bubble sort to maintain the sorted order of the table.
+
+# modify(self, key, value):
+
+Time Complexity: O(n), where n is the number of Records in the SortedTable.
+
+This function modifies the value of a Record with the given key. It searches for the Record using linear search and updates the value if found.
+
+# remove(self, key):
+
+Time Complexity: O(n), where n is the number of Records in the SortedTable.
+
+This function removes a Record with the given key. It searches for the Record using linear search and shifts the remaining elements to fill the gap created by the removal.
+
+# search(self, key):
+
+Time Complexity: O(n), where n is the number of Records in the SortedTable.
+
+This function searches for a Record with the given key. It performs linear search to find the Record and returns its value if found.
+
+
+```
+
+
 ## Part B: Suggestions (4 marks)
 
 Suggest 2 improvements you could make to the code that will improve its efficiency. State which function(s) would be improved by the suggested improvement.  Write up your suggestion into a2.md.   This is not a coding question.  You do not need to implement your suggestion.  A clear description of what you want to do is good enough.
