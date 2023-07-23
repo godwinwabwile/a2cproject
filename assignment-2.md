@@ -259,6 +259,16 @@ Suggest 2 improvements you could make to the code that will improve its efficien
 * You can't change the underlying data structure.  For example, "make it a hash table" would make it something different so that won't count.  Fundamentally it must use a sorted python list as the underlying data structure
 * A change only counts once: "Do a selection sort instead of what is written in the __len__() function" and "Do a selection sort instead of what is written in the capacity() function" is just one suggestion not two. (note this suggestion is silly, and just used as an example)
 
+## Suggestion
+```Python
+# Suggestion 1: In the length function instead of using loop to find number of keys we can use a global variable to count number of keys by doing increament in the global variable of length whenever it call the insert function, and decreases as we call remove function.
+
+ 
+# Suggestion 2: In the insert function instead of transfering old table to new table by loop, we can use insert function again and make the length global varible to zero and this will help to make programing more abstract.
+
+
+```
+
 ## Part C Implementation of Linear Probing Hash Table two different ways (20 marks)
 
 This section is to be implemented in **a2c.py**
